@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+
+	</title>
+</head>
+<body>
+<script type="text/javascript">
+			function guess(){
+				var guessNum;
+				var correctNum;
+
+				guessNum = window.prompt("Trt to guess one number from 1~10!");
+				correctNum = Math.floor(Math.random()*10+1);
+
+				if (guessNum==correctNum) {
+					alert("Congratulations!!!");
+				}
+				while(guessNum!=correctNum){
+					guessNum = window.prompt("Wrong!Try again!!!(1~10)");
+					if (guessNum==correctNum) {
+					alert("Congratulations!!!");
+				    }
+				}
+			}
+
+			guess();
+		</script>
+</body>
+</html>
